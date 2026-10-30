@@ -1,3 +1,13 @@
+## 8.3.0.1 — house fork (TheDigitalEagle)
+
+Identical to v8.3.0 except `aioafero` is pinned to a fork carrying
+[Expl0dingBanana/aioafero#109](https://github.com/Expl0dingBanana/aioafero/pull/109)
+("Fix Conclave RGB push state decoding"): Conclave sends `color-rgb` as a
+six-digit hex string, which crashed the light controller with
+`TypeError: string indices must be integers` on every push for any bulb in
+RGB mode. Drop this fork and return to jdeath/Hubspace-Homeassistant once
+upstream ships the fix.
+
 # Changelog
 
 All notable changes to the Hubspace Home Assistant integration are documented here.
